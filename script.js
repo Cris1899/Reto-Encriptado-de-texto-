@@ -1,6 +1,6 @@
 var botonEncriptador = document.querySelector(".btn-encriptar");
 var botonDesencriptador = document.querySelector(".btn-desencriptar");
-var Gatito = document.querySelector(".contenedor-gatito");
+var dibujo = document.querySelector(".contenedor-dibujo");
 var contenedor  = document.querySelector(".contenedor-parrafo");
 var resultado = document.querySelector(".texto-resultado");
 //pongo "".gatito" para llamar las clases o class
@@ -26,8 +26,9 @@ function recuperarTexto(){
 }
 
 function ocultarAdelante(){
-    Gatito.classList.add("ocultar");
+    dibujo.classList.add("ocultar");
     contenedor.classList.add("ocultar");
+    //Ocultar imagen de contenedor cuando se ponga un texto encriptado o desencriptado
 }
 function encriptarTexto(mensaje){
     var texto = mensaje;
